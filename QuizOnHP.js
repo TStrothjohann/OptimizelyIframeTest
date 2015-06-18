@@ -1,7 +1,3 @@
-
-
-
-
 /**
  * jQuery iframe click tracking plugin by Vicente Paré used for A/B-Testing an iframe with optimizely
  *
@@ -174,8 +170,6 @@ jQuery.noConflict();
 
 
 //Optimizely Click handler
-
-
 jQuery(".quiz").replaceWith(
 	'<div class="new_quiz"><iframe width="320" frameborder="0" height="500" style="height: 500px; width:320px; border:0 none;" src="http://quiz.zeit.de/#/quiz/45/" ></iframe></div>'
 	);
@@ -183,7 +177,6 @@ jQuery(".quiz").replaceWith(
 window['optimizely'] = window['optimizely'] || [];
 
 // sends a tracking call to Optimizely for the given event name. 
-
 jQuery(document).ready(function(jQuery){
     jQuery('.new_quiz iframe').iframeTracker({
         blurCallback: function(){
@@ -193,6 +186,4 @@ jQuery(document).ready(function(jQuery){
         }
     });
 });
-
-//$(editFrame).contents().find("html").html();
 
